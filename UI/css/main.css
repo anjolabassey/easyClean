@@ -11,6 +11,9 @@ body {
     justify-content: space-between;
     align-items: baseline;
 }
+.logo {
+    font-family: 'Pacifico', cursive;
+}
 .nav-menu {
     display: flex;
     justify-content: space-around;
@@ -42,6 +45,7 @@ body {
     padding: 3%;
     line-height: 2;
     font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
     
 }
 .main-text a {
