@@ -39,8 +39,8 @@ $("#pay").click(function(event) {
             "txRef": "MC-" + Date.now(),
             "redirect_url": "https://rave-webhook.herokuapp.com/receivepayment"
         },
-        success: function(result) {
-            console.log(result);
+        success: function(response) {
+            console.log(response);           
         },
         error: function(error) {
             console.log(error);

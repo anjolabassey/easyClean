@@ -1,7 +1,10 @@
-var express = require('express');
+require('dotenv').config();var express = require('express');
+
 var bodyParser = require('body-parser');
 var logger = require('morgan');
-var db = require("./models/database");
+var db = require("./server/models/database");
+
+
 
 var port = process.env.PORT || 3000;
 
