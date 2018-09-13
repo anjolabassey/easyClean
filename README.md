@@ -1,6 +1,8 @@
 # easyClean
 An easy way to order and pay for cleaning services. Users can book a cleaning appointment and pay for it on the go.
 
+You can check it out here  https://tranquil-taiga-31387.herokuapp.com/
+
 ## Built With
 
 The UI component is built with;
