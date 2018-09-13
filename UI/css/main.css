@@ -3,12 +3,31 @@ body {
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    
-
 }
-header {
+.header {
     color: white;
     padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+}
+.nav-menu a {
+    color: white;
+    padding: 5px;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 2%;
+}
+.nav-menu a:hover {
+    color: white;
+    text-decoration: none;
+    border: 1px solid #FFBF00;
+    border-radius: 4px;
 }
 .main {
     display: flex;
@@ -18,10 +37,19 @@ header {
     margin-top: 2%;
     color: white;
 }
+
 .main-text {
     padding: 3%;
     line-height: 2;
     font-size: 1.2em;
+    
+}
+.main-text a {
+    color: black;
+}
+.main-text a:hover {
+    text-decoration: none;
+    color: black;
 }
 .main-account {
     background-color: rgba(0, 0, 0, 0.5);
@@ -34,8 +62,14 @@ input:focus{
 }
 input[type="text"], input[type="email"], input[type="password"], input[type="submit"] {
     width: 100%;
+    
 }
 
 .btn {
     background-color: #FFBF00;
+    font-weight: bold;
+}
+.btn:hover {
+    box-shadow: 2px 3px 5px black;
+
 }
