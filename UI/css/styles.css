@@ -56,3 +56,6 @@ h2 {
     text-decoration: none;
     color: black;
 }
+form {
+    font-weight: 600;
+}
