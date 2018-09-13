@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -45,29 +45,42 @@
 
         <form>
             <div class="form-group">
+                <label for="email">Email address</label>
+                <input required type="text" class="form-control" id="email" placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input required type="number" class="form-control" id="amount" placeholder="Enter amount">
+            </div>
+            <div class="form-group">
                 <label for="cardnumber">Card number</label>
-                <input type="number" class="form-control" id="cardnumber" placeholder="Enter your card number">
+                <input required type="text" class="form-control" id="cardnumber" placeholder="Enter your card number">
             </div>
             <div class="row">
                 <div class="col form-group">
                     <label for="expirydate">MM/YY</label>
-                    <input type="date" id="expirydate" class="form-control">
+                    <input required type="date" id="expirydate" class="form-control">
                 </div>
                 <div class="col form-group">
                     <label for="cvv">cvv</label>
-                    <input type="number" id="cvv" class="form-control">
+                    <input required type="text" id="cvv" class="form-control">
                 </div>
+            </div>
+            <div class="form-group">
+                    <label for="pin">PIN</label>
+                    <input required type="password" class="form-control" id="pin" placeholder="Enter your pin">
+                </div>
+            <div class="controls">
+                <a href=""><input class="btn" type="submit" id="pay" value="Pay"></a>    
             </div>
         </form>
 
 
-        <div class="controls">
-            <button class="btn" type="submit">
-                <a href="">Pay</a>
-            </button>
-        </div>
+
 
     </div>
+
+    <script src="js/pay.js"></script>
 
 </body>
 
